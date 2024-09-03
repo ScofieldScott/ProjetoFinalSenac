@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.container{
+    /* width: 1200px; */
+    margin: 0 auto;
+}
+
+/* INICIO DAS CONFIGURAÇÕES DO HEADER */
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C5EBAA;
+    height: 100px;
+}
+
+header h1 a:link{
+    color: #000;
+    text-decoration: none;
+}
+
+header h1 a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+header h1 a:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+.main-header h1{
+    margin-left: 50px;
+    font-size: 34px;
+    font-family: Irish Grover;
+}
+
+nav{
+    display: flex;
+    gap: 23px;
+    padding-right: 40px;
+}
+
+nav select{
+    border: none;
+    border-radius: 20px;
+    background-color: #C5EBAA;
+    font-size: 28px;
+}
+
+nav select:hover{
+    padding: 4px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: -2.5px -1.5px 1.5px 1.5px #00000034;
+    cursor: pointer;
+}
+
+nav option{
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    padding: 4px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: -1.5px -0.5px 1.5px 1.5px #00000034;
+    cursor: pointer;
+}
+
+
+/* FIM DAS CONFIGURAÇÕES DO HEADER */
+
+/* ~~~~INICIO DAS CONFIGURAÇÕES DO CARROSSEL~~~~ */
+
+.box-carrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-top: 50px;
+    background-color: #F6F193;
+}
+
+/* -->ESSA PARTE DAS IMAGENS É TEMPORÁRIO ATÉ Q SE AJUSTE O CARROSSEL <-- */
+.carrossel{
+    border: 5px solid #000;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* ~~~~FIM DAS CONFIGURAÇÕES DO CARROSSEL~~~~ */
+
+
+/* INICIO DAS CONFIGURAÇÕES DO BUTAO DO CARDAPIO */
+.butao{
+    margin-top: 100px;
+    height: 400px;
+}
+
+.butao h4{
+    padding-left: 40%;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.butao div{
+    margin-top: 80px;
+    padding-left: 43%;
+    display: flex;
+    align-items: center;
+}
+
+.texto-pedido{
+    justify-content: space-around;
+}
+
+.cardapio{
+    border: 2px solid #000;
+    border-radius: 50px;
+    background-color: #F2C18D;
+    padding: 6px 1px 6px 1px;
+    width: 300px;
+    height: 80px;
+    cursor: pointer;
+    font-size: 22px;
+    
+}
+
+/* FIM DAS CONFIGURAÇÕES DO BUTAO DO CARDAPIO */
+
+
+
+
+/* INICIO DAS CONFIGURAÇÕES DO SOBRE */
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD6A5;
+    margin-bottom: 50px;
+}
+
+article{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    
+    margin: 50px;
+}
+
+article h4{
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+}
+
+article p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 25px;
+    text-align: justify;
+}
+
+/* FIM DAS CONFIGURAÇÕES DO SOBRE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO DAS CONFIGURAÇÕES DO FOOTER */
+
+/* aqui eu define a altura e a cor do footer */
+footer{
+    background-color: #C5EBAA;
+    height: 150px;
+}
+
+/* esse div foi necessario para organizar melhor os objetos de informação */
+.box-das-informações{
+    /* margin: 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* esse div foi necessario para a separação coerente e correta dos objetos */
+.barra-de-informacoes{
+    margin-top: 30px;
+    gap: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.barra-de-informacoes strong{
+    font-size: 25px;
+}
+
+
+/* INICIO CONFIGURAÇÕES DO DIV DE LOCALIZAÇÃO */
+.localizacao{
+    margin-top: 10px;
+}
+
+.localizacao em{
+    display: flex;
+    font-size: 16px;
+}
+
+
+.localizacao a:link{ 
+    color: #000;
+    text-decoration: none;
+    /* align-self: flex-start; */
+}
+
+.localizacao a:hover{
+    text-decoration: underline solid #000;
+}
+
+.localizacao a:visited{ 
+    color: #000;
+    text-decoration: none;
+}
+
+/* FIM CONFIGURAÇÕES DO DIV DE LOCALIZAÇÃO */
+
+
+
+
+
+/* INICIO CONFIGURAÇÕES DO DIV DE MIDIA */
+.midia strong{
+    padding-left: 20px;
+}
+
+.midia div{
+    display: flex;
+    margin: 10px;
+    gap: 15px;
+}
+
+.facebook, .insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.midia a:hover{
+    border-radius: 20px;
+    border: 2px solid #fff;
+    box-shadow: -1.5px -0.5px 1.5px 1.5px #00000034;
+}
+
+/* FIM CONFIGURAÇÕES DO DIV DE MIDIA */
+
+
+
+
+
+/* INICIO CONFIGURAÇÕES DO DIV DE CONTATO */
+
+.contato strong{
+    padding-left: 20px;
+}
+
+.contato em{
+    margin-top: 5px;
+    color: #000000d5;
+    font-size: 20px;
+}
+/* FIM CONFIGURAÇÕES DO DIV DE CONTATO */
+
+
+
+
+/* FIM DAS CONFIGURAÇÕES DO FOOTER */
