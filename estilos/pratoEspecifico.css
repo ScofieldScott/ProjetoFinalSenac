@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.container{
+    /* width: 1200px; */
+    margin: 0 auto;
+}
+
+/* INICIO DAS CONFIGURAÇÕES DO HEADER */
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C5EBAA;
+    height: 100px;
+}
+
+header h1 a:link{
+    color: #000;
+    text-decoration: none;
+}
+
+header h1 a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+header h1 a:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+.main-header h1{
+    margin-left: 50px;
+    font-size: 34px;
+    font-family: Irish Grover;
+}
+
+nav{
+    display: flex;
+    gap: 23px;
+    padding-right: 40px;
+}
+
+nav select{
+    border: none;
+    border-radius: 20px;
+    background-color: #C5EBAA;
+    font-size: 28px;
+}
+
+nav select:hover{
+    padding: 4px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: -2.5px -1.5px 1.5px 1.5px #00000034;
+    cursor: pointer;
+}
+
+nav option{
+    border-radius: 20px;
+    border: none;
+    /* display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    width: 264px; */
+    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+
+nav a:hover{
+    padding: 4px;
+    border-radius: 10px;
+    /* border: 2px solid #fff; */
+    box-shadow: 1.5px 0.5px -2.5px -5.5px #00000034;
+    cursor: pointer;
+}
+
+
+/* FIM DAS CONFIGURAÇÕES DO HEADER */
+
+
+/* INICIO DAS CONFIGURAÇÕES DE APRESENTAÇÃO DA COMIDA */
+
+.box-apresentacao-do-prato{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box-apresentacao-do-prato img{
+    border-radius: 10px;
+}
+
+.box-apresentacao-do-prato strong{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    /* margin-bottom: 20px; */
+}
+
+.valorcalorico{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.box-apresentacao-do-prato p{
+    font-size: 20px;
+}
+
+
+/* FIM DAS CONFIGURAÇÕES DE APRESENTAÇÃO DA COMIDA */
+
+
+/* INICIO DAS CONFIGURAÇÕES DAS INFORMAÇÕES DE ALÉRGENO */
+
+.box-de-informacao-dos-alergenos{
+    border-top: 1px solid #000;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: start;
+    gap: 10px;
+}
+
+.box-de-informacao-dos-alergenos h3{
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.box-de-informacao-dos-alergenos div{
+    margin-left: 20%;
+    margin-right: 20%;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+
+}
+
+.box-de-informacao-dos-alergenos ul{
+    display: grid;
+    list-style: none;
+    font-size: 28px;
+    border: 1px solid #000;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    line-height: 2.5;
+}
+
+/* FIM DAS CONFIGURAÇÕES DAS INFORMAÇÕES DE ALÉRGENO */
+
+
+/* INICIO DAS CONFIGURAÇÕES DAS INFORMAÇÕES DE ALÉRGENO */
+.box-do-cardapio{
+    /* margin-top: 700px; */
+    margin: 50px;
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+
+.box-do-cardapio div{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-items: center;
+    justify-items: center;
+}
+
+.box-do-cardapio button{
+    background-color: #F2C18D;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+}
+
+/* FIM DAS CONFIGURAÇÕES DAS INFORMAÇÕES DE ALÉRGENO */
+
+
+/* INICIO DAS CONFIGURAÇÕES DO FOOTER */
+
+/* aqui eu define a altura e a cor do footer */
+footer{
+    background-color: #C5EBAA;
+    height: 150px;
+}
+
+/* esse div foi necessario para organizar melhor os objetos de informação */
+.box-das-informações{
+    /* margin: 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* esse div foi necessario para a separação coerente e correta dos objetos */
+.barra-de-informacoes{
+    margin-top: 30px;
+    gap: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.barra-de-informacoes strong{
+    font-size: 25px;
+}
+
+
+/* INICIO CONFIGURAÇÕES DO DIV DE LOCALIZAÇÃO */
+.localizacao{
+    margin-top: 10px;
+}
+
+.localizacao em{
+    display: flex;
+    font-size: 16px;
+}
+
+
+.localizacao a:link{ 
+    color: #000;
+    text-decoration: none;
+    /* align-self: flex-start; */
+}
+
+.localizacao a:hover{
+    text-decoration: underline solid #000;
+}
+
+.localizacao a:visited{ 
+    color: #000;
+    text-decoration: none;
+}
+
+/* FIM CONFIGURAÇÕES DO DIV DE LOCALIZAÇÃO */
+
+
+
+
+
+/* INICIO CONFIGURAÇÕES DO DIV DE MIDIA */
+.midia strong{
+    padding-left: 20px;
+}
+
+.midia div{
+    display: flex;
+    margin: 10px;
+    gap: 15px;
+}
+
+.facebook, .insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.midia a:hover{
+    border-radius: 20px;
+    border: 2px solid #fff;
+    box-shadow: -1.5px -0.5px 1.5px 1.5px #00000034;
+}
+
+/* FIM CONFIGURAÇÕES DO DIV DE MIDIA */
+
+
+
+
+
+/* INICIO CONFIGURAÇÕES DO DIV DE CONTATO */
+
+.contato strong{
+    padding-left: 20px;
+}
+
+.contato em{
+    margin-top: 5px;
+    color: #000000d5;
+    font-size: 20px;
+}
+/* FIM CONFIGURAÇÕES DO DIV DE CONTATO */
+
+
+
+
+/* FIM DAS CONFIGURAÇÕES DO FOOTER */
