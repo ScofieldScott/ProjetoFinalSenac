@@ -85,23 +85,79 @@ nav a:hover{
 
 /* ~~~~INICIO DAS CONFIGURAÇÕES DO CARROSSEL~~~~ */
 
-.box-carrossel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    margin-top: 50px;
-    background-color: #F6F193;
-}
-
 /* -->ESSA PARTE DAS IMAGENS É TEMPORÁRIO ATÉ Q SE AJUSTE O CARROSSEL <-- */
 .carrossel{
     border: 5px solid #000;
-    margin: 30px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
+    background-color: #F6F193;
+}
+
+.slider{
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li{
+    list-style: none;
+    position: absolute;
+}
+
+.slider img{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.slider input{
+    display: none;
+}
+
+.slider label{
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label{
+    left: 10px;
+}
+
+.slider li:nth-child(2) label{
+    left: 40px;
+}
+
+.slider li:nth-child(3) label{
+    left: 70px;
+}
+
+.slider li:nth-child(4) label{
+    left: 100px;
+}
+
+.slider li:nth-child(5) label{
+    left: 130px;
 }
 
 /* ~~~~FIM DAS CONFIGURAÇÕES DO CARROSSEL~~~~ */
