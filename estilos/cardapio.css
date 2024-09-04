@@ -91,31 +91,38 @@ nav a:hover{
 
 
 /* INICIO DAS OPÇOES DO CARDAPIO */
-
-section{
-    /* margin-top: 50px; */
+.tipos-da-comida{
+    display: grid;
     margin: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
-    /* background-color: #47b42c; */
+    margin-bottom: 100px;
+    grid-template-columns: 1fr 400px;
+    justify-content: center;
+    align-content: center;
+
+    align-items: center;
+    justify-items: center;
+    /* gap: 75px; */
 }
+
 
 section h3{
     font-size: 40px;
     text-decoration: underline;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    /* margin-bottom: 50px; */
 }
 
 .box-do-conjuto-comidas{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 80px;
-    column-gap: 200px;
+    column-gap: 100px;
 }
 
 .box-de-comida--1,.box-de-comida--2,.box-de-comida--3,.box-de-comida--4,.box-de-comida--5,.box-de-comida--6,.box-de-comida--7,.box-de-comida--8{
     /* background-color: #D9D9D9; */
+    /* border: 3px solid #000; */
     border: 1px solid #000;
     padding: 10px;
     border-radius: 5px;
@@ -136,7 +143,7 @@ section h3{
     padding: 4px;
     border-radius: 10px;
     border: 2px solid #fff;
-    box-shadow: 1.5px 0.5px 15px 1.5px #00000034;
+    box-shadow: -1.5px 0.5px 15px 1.5px #0000005b;
     cursor: pointer;
 }
 
@@ -146,6 +153,64 @@ section h3{
 /* FIM DAS OPÇOES DO CARDAPIO */
 
 
+
+/* INICIO DAS CONFIGURAÇÕES DOS COMBOS */
+
+
+aside{
+    border-top: 4px solid #FFD6A5;
+    border-bottom: 4px solid #FFD6A5;
+    background-color: #f6f19380;
+    padding: 50px 40px;
+}
+
+aside h4{
+    font-size: 30px;
+    text-align: center;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+aside ul{
+    list-style: none;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+
+.box-dos-combos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+li{
+    font-size: 17px;
+}
+
+li div {
+    display: grid;
+    color: #000;
+    text-decoration: none;
+}
+
+ul a:link{
+    text-decoration: none;
+}
+
+ul li:hover{
+    border: 2px solid #fff;
+    box-shadow: -1.5px 0.5px 15px 1.5px #0000005b;
+    border-radius: 10px;
+}
+
+aside img{
+    border-radius: 5px;
+}
+
+
+/* FIM DAS CONFIGURAÇÕES DOS COMBOS */
 
 
 
