@@ -92,9 +92,12 @@ nav a:hover{
 
 /* INICIO DAS OPÇOES DO CARDAPIO */
 .tipos-da-comida{
-    margin: 50px;
+    margin-top: 50px;
+    margin: 20px;
     margin-bottom: 100px;
-    
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 50px;
 }
 
 
@@ -102,18 +105,28 @@ section h3{
     font-size: 40px;
     text-decoration: underline;
     margin-bottom: 40px;
-    /* margin-bottom: 50px; */
+}
+
+section h4{
+    font-size: 30px;
+    padding-left: 10%;
+    margin:5%;
 }
 
 .box-do-conjuto-comidas{
+    width: 200px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    padding-left: 20%;
+
+    align-items: center;
+    justify-items: center;
     row-gap: 80px;
     column-gap: 100px;
 }
 
-.box-de-comida--1,.box-de-comida--2,.box-de-comida--3,.box-de-comida--4,.box-de-comida--5,.box-de-comida--6,.box-de-comida--7,.box-de-comida--8{
+.box-de-comida--1,.box-de-comida--2,.box-de-comida--3{
     /* background-color: #D9D9D9; */
     /* border: 3px solid #000; */
     border: 1px solid #000;
@@ -125,14 +138,23 @@ section h3{
     justify-content: center;
 }
 
+span{
+    color: #000000b9;
+}
+
+span:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    color: #000;
+}
+
+.box-do-conjuto-comidas a:link{
+    text-decoration: none;
+}
+
 .box-de-comida--1:hover,
 .box-de-comida--2:hover,
-.box-de-comida--3:hover,
-.box-de-comida--4:hover,
-.box-de-comida--5:hover, 
-.box-de-comida--6:hover,
-.box-de-comida--7:hover,
-.box-de-comida--8:hover{
+.box-de-comida--3:hover{
     padding: 4px;
     border-radius: 10px;
     border: 2px solid #fff;
@@ -151,42 +173,33 @@ section h3{
 
 
 aside{
+    height: min-content;
     width: max;
     border-top: 4px solid #FFD6A5;
     border-bottom: 4px solid #FFD6A5;
     background-color: #f6f19380;
     padding: 50px 40px;
+    border-radius: 0 12px 12px 0;
+    align-self: end;
 }
 
 aside h4{
     font-size: 30px;
-    text-align: center;
+    text-align: start;
     color: #444;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-
-aside ul{
-    list-style: none;
-    margin: 10px;
-    margin-left: 0px;
-}
-
 
 .box-dos-combos{
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     margin-bottom: 30px;
 }
 
 li{
-    font-size: 17px;
-}
-
-li div {
-    display: grid;
+    font-size: 20px;
     color: #000;
-    text-decoration: none;
 }
 
 ul a:link{
@@ -197,10 +210,6 @@ ul li:hover{
     border: 2px solid #fff;
     box-shadow: -1.5px 0.5px 15px 1.5px #0000005b;
     border-radius: 10px;
-}
-
-aside img{
-    border-radius: 5px;
 }
 
 

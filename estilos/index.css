@@ -229,8 +229,9 @@ article h4{
 
 article p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 25px;
+    line-height: 30px;
     text-align: justify;
+    margin-bottom: 10px;
 }
 
 /* FIM DAS CONFIGURAÇÕES DO SOBRE */
