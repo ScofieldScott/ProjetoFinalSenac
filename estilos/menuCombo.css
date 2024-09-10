@@ -102,11 +102,11 @@ nav a:hover{
     margin-bottom: 100px;
 }
 
+
 .titulo{
     /* display: flex; */
     align-items: center;
 }
-
 
 .titulo h3{
     display: flex;
@@ -117,33 +117,81 @@ nav a:hover{
     margin-bottom: 50px;
 }
 
-.titulo h4{
-    display: flex;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
 .box-do-conjuto-comidas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto,1fr);
+    grid-template-rows: repeat(2, 1fr);
 
     align-items: center;
     justify-items: center;
-    row-gap: 80px;
     column-gap: 20px;
+    row-gap: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid #000;
 }
 
-.box-do-conjuto-comidas h2{
-    font-size: 30px;
+.box-de-comida--1{
+    height: 200px;
+    width: 200px;
+    border: 2px solid #000;
+    border-radius: 15%;
+}
+
+.box-de-comida--1:hover{
+    padding: 4px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: -1.5px 0.5px 15px 1.5px #0000005b;
+    cursor: pointer;
+}
+
+span{
+    color: #000000b9;
+}
+
+span:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    color: #000;
+}
+
+.box-do-conjuto-comidas a:link{
+    text-decoration: none;
+}
+
+
+
+/* FIM DAS CONFIGURAÇÕES DE CARDAPIO */
+
+/* INICIO DAS CONFIGURAÇÕE DO CARROSSEL */
+
+.mais-opcoes{
+    font-size: 27px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.box-do-conjuto-de-carrosseis{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    align-items: center;
+    justify-items: center;
+    column-gap: 50px;
+}
+
+.box-do-conjuto-de-carrosseis h2{
+    font-size: 28px;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* inicio do Carrossel dos combos */
 .slider-dos-combos {
@@ -180,7 +228,6 @@ nav a:hover{
 }
 
 /* fim do Carrossel dos combos */
-
 
 /* inicio do Carrossel de mais pedidos */
 .slider-dos-mais-pedidos {
@@ -277,26 +324,6 @@ nav a:hover{
 /* fim do Carrossel de acompanhamentos */
 
 
-
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-span{
-    color: #000000b9;
-}
-
-span:hover{
-    font-size: 20px;
-    text-decoration: underline;
-    color: #000;
-}
-
-.box-do-conjuto-comidas a:link{
-    text-decoration: none;
-}
-
 .slider-dos-combos:hover,
 .slider-dos-mais-pedidos:hover,
 .slider-dos-pratos:hover,
@@ -308,10 +335,11 @@ span:hover{
     cursor: pointer;
 }
 
+/* FIM DAS CONFIGURAÇÕE DO CARROSSEL */
 
 
 
-/* FIM DAS OPÇOES DO CARDAPIO */
+/* FIM DAS CONFIGURAÇÕES DE MAIS OPÇÕES */
 
 
 

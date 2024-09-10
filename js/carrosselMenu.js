@@ -28,21 +28,21 @@ setInterval(function(){
     if (currentIndexCombos >= 4) {
         currentIndexCombos = 0; // Volta ao início
     }
-    }, 3050);
+    }, 3200);
 setInterval(function(){
     moveCarousel('carouselPedidos',currentIndexPedidos) 
     currentIndexPedidos++
     if (currentIndexPedidos >= 4) {
         currentIndexPedidos = 0; // Volta ao início
     }
-    }, 3100);
+    }, 3300);
 setInterval(function(){
     moveCarousel('carouselPratos',currentIndexPratos)
     currentIndexPratos++
-    if (currentIndexPratos >= 4) {
+    if (currentIndexPratos >= 8) {
         currentIndexPratos = 0; // Volta ao início
     }
-    }, 3150);
+    }, 4000);
 setInterval(function(){
         moveCarousel('carouselAcompanhamento',currentIndexAcompanhamento)
         currentIndexAcompanhamento++
