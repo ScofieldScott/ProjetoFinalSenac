@@ -99,70 +99,29 @@ nav a:hover{
     background-color: #F6F193;
 }
 
-.slider{
-    display: block;
-    height: 293px;
-    width: 400px;
+.slider {
     position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-.slider li{
-    list-style: none;
-    position: absolute;
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: margin-left 1s ease-in-out;
 }
 
-.slider img{
-    height: 50%;
+.slide {
     width: 100%;
-    vertical-align: top;
-    transform: scale(1);
-    border-radius: 3%;
-
-    box-shadow: 10px 12px 24px 1.5px #0000008f;
 }
 
-.slider img{
-    opacity: 0;
-    visibility: hidden;
-}
-
-.slider li input:checked ~ img{
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
-}
-
-.slider input{
-    display: none;
-}
-
-.slider label{
-    display: block;
-    height: 15px;
-    width: 15px;
-    top: -20px;
-    background-color: #fff;
-    border: 2px solid green;
-    cursor: pointer;
-    position: absolute;
-    z-index: 10;
-
-}
-
-.slider li:nth-child(1) label{
-    left: 10px;
-}
-
-.slider li:nth-child(2) label{
-    left: 40px;
-}
-
-.slider li:nth-child(3) label{
-    left: 70px;
-}
-
-.slider li:nth-child(4) label{
-    left: 100px;
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 /* ~~~~FIM DAS CONFIGURAÇÕES DO CARROSSEL~~~~ */
