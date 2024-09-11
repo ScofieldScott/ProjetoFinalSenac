@@ -12,27 +12,50 @@
     <div class="container">
 
         <!-- INICIO DO HEADER -->
-        <header class="main-header">
-            <div class="logo">
-                <a href="index.html"><img src="imagens/Logo_Alessa.jpeg" alt="" height="50px"></a>
-                <h1><a href="index.html">Delivery Alessa</a></h1>
-            </div>
-
-            <nav>
-
-                <select name="cardapio" id="cardapio">
+        <div>
+            <header class="main-header">
+                <div class="logo">
+                    <a href="index.html"><img src="imagens/Logo_Alessa.jpeg" alt="" height="50px"></a>
+                    <h1><a href="index.html">Delivery Alessa</a></h1>
+                </div>
                     
-                    <option >CARDÁPIO</option>
-                    <option value="maca"><a href="menu.html">maca</a></option>
-                    <option value="banan">banana</option>
-                    <option value="pera">pera</option>
-                </select>
-                
+                <nav class="cabecalho-principal">
+                        
+                    <select name="cardapio" id="cardapio">
+                            
+                        <option >CARDÁPIO</option>
+                        <option value="maca"><a href="menu.html">maca</a></option>
+                        <option value="banan">banana</option>
+                        <option value="pera">pera</option>
+                    </select>
+                        
+                        
+                    <a href="carrinho.html"><img src="imagens/carrinho.png" alt="" width="25" height="25"></a>
+                    
+                </nav>
+            </header>
 
-                <a href="carrinho.html"><img src="imagens/carrinho.png" alt="" width="25" height="25"></a>
-
-            </nav>
-        </header>
+            <header class="sub-header">
+                <nav class="cabecalho-secundario">
+                    <a href="menu.html">
+                        <span>Menu</span>
+                    </a>
+                    <a href="menuPratos.html">
+                        <span>Pratos</span>
+                    </a>
+                    <a href="menuPratosMaisPedidos.html">
+                        <span>Pratos mais populares</span>
+                    </a>
+                    <a href="menuCombo.html">
+                        <span>Combos</span>
+                    </a>
+                    <a href="menuAcompanhemento.html">
+                        <span>Acopanhamentos</span>
+                    </a>
+                    
+                </nav>
+            </header>
+        </div>
         <!-- FIM DO HEADER -->
         
 
@@ -68,7 +91,7 @@
 
                 <div>
                     <a href="menu.html">
-                        <button class="cardapio" type="button" >VER CARDÁPIO</button>
+                        <button class="cardapio" type="button" >VER MENU</button>
                     </a>
                 </div>
 

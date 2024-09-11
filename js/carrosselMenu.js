@@ -28,14 +28,14 @@ setInterval(function(){
     if (currentIndexCombos >= 4) {
         currentIndexCombos = 0; // Volta ao início
     }
-    }, 3200);
+    }, 2000);
 setInterval(function(){
     moveCarousel('carouselPedidos',currentIndexPedidos) 
     currentIndexPedidos++
     if (currentIndexPedidos >= 4) {
         currentIndexPedidos = 0; // Volta ao início
     }
-    }, 3300);
+    }, 3000);
 setInterval(function(){
     moveCarousel('carouselPratos',currentIndexPratos)
     currentIndexPratos++
@@ -49,4 +49,4 @@ setInterval(function(){
     if (currentIndexAcompanhamento >= 4) {
         currentIndexAcompanhamento = 0; // Volta ao início
     }
-    }, 3000);
+    }, 5000);

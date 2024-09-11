@@ -11,39 +11,78 @@
 <body>
 
     <div class="container">
-         <!-- INICIO DO HEADER -->
-         <header class="main-header">
-            <h1><a href="index.html">Delivery Alessa</a></h1>
-
-            <nav>
-
-                <select name="cardapio" id="cardapio">
+        
+        <!-- INICIO DO HEADER -->
+        <div>
+            <header class="main-header">
+                <div class="logo">
+                    <a href="index.html"><img src="imagens/Logo_Alessa.jpeg" alt="" height="50px"></a>
+                    <h1><a href="index.html">Delivery Alessa</a></h1>
+                </div>
                     
-                    <option >CARDÁPIO</option>
-                    <a href="index.html"><option value="maca">maca</option></a>
-                    <option value="banan">banana</option>
-                    <option value="pera">pera</option>
-
+                <nav class="cabecalho-principal">
+                        
+                    <select name="cardapio" id="cardapio">
+                            
+                        <option >CARDÁPIO</option>
+                        <option value="maca"><a href="menu.html">maca</a></option>
+                        <option value="banan">banana</option>
+                        <option value="pera">pera</option>
+                    </select>
+                        
+                        
+                    <a href="carrinho.html"><img src="imagens/carrinho.png" alt="" width="25" height="25"></a>
                     
-                </select>
-                
+                </nav>
+            </header>
 
-                <a href="carrinho.html"><img src="imagens/carrinho.png" alt="" width="25" height="25"></a>
-
-            </nav>
-        </header>
+            <header class="sub-header">
+                <nav class="cabecalho-secundario">
+                    <a href="menu.html">
+                        <span>Menu</span>
+                    </a>
+                    <a href="menuPratos.html">
+                        <span>Pratos</span>
+                    </a>
+                    <a href="menuPratosMaisPedidos.html">
+                        <span>Pratos mais populares</span>
+                    </a>
+                    <a href="menuCombo.html">
+                        <span>Combos</span>
+                    </a>
+                    <a href="menuAcompanhemento.html">
+                        <span>Acopanhamentos</span>
+                    </a>
+                    
+                </nav>
+            </header>
+        </div>
         <!-- FIM DO HEADER -->
+
+        <!-- INICIO DO BOTÃO DE VOLTAR -->
+
+        <div class="box-voltar">
+            <a href="menuPratos.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="voltar">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+
+                <strong class="frase-voltar">Voltar</strong>
+            </a>
+        </div>
+
+        <!-- FIM DO BOTÃO DE VOLTAR -->
 
 
         <!-- INICIO DA APRESENTAÇÃO DA COMIDA -->
 
         <div class="box-apresentacao-do-prato">
 
-            <img src="https://img.freepik.com/fotos-premium/um-prato-de-comida-com-carne-de-arroz-e-legumes_848239-142.jpg?size=626&ext=jpg&ga=GA1.1.2088063046.1725717405&semt=ais_hybrid" alt="" height="auto" width="auto">
+            <img src="https://img.freepik.com/fotos-gratis/bife-de-frango-coberto-com-gergelim-branco-ervilhas-tomates-brocolis-e-abobora-em-um-prato-branco_1150-24770.jpg?size=626&ext=jpg" alt="" height="auto" width="auto">
 
             <div class="detalhes-do-prato">
                 <h3>
-                    <strong>Prato de Frango</strong>
+                    <strong>Especial de Frango</strong>
                 </h3>
 
                 <div class="valorcalorico">
