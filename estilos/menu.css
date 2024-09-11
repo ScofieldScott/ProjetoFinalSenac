@@ -133,7 +133,7 @@ nav a:hover{
     align-items: center;
     justify-items: center;
     row-gap: 80px;
-    column-gap: 20px;
+    /* column-gap: 20px; */
 }
 
 .box-do-conjuto-comidas h2{

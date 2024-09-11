@@ -139,7 +139,6 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.entradas,
 .acompanhamentos,
 .sobrimesa,
 .bebidas{
@@ -149,7 +148,6 @@ nav a:hover{
     row-gap: 30px;
 }
 
-.entradas,
 .acompanhamentos,
 .sobrimesa{
     padding-bottom: 50px;

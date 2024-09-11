@@ -124,6 +124,9 @@ nav a:hover{
 
     align-items: center;
     justify-items: center;
+
+    margin-left: 31%;
+    width: 800px;
     column-gap: 20px;
     row-gap: 100px;
     margin-bottom: 100px;

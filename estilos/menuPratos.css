@@ -178,6 +178,21 @@ span:hover{
     text-decoration: none;
 }
 
+.proteina-carne p,
+.proteina-frango p,
+.proteina-peixe p,
+.vegetariano p{
+    color: #000000b9;
+}
+
+.proteina-carne p:hover,
+.proteina-frango p:hover,
+.proteina-peixe p:hover,
+.vegetariano p:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
 
 
 /* FIM DAS CONFIGURAÇÕES DE CARDAPIO */
