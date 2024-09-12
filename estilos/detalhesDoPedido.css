@@ -267,6 +267,19 @@ label input:checked+span{
     margin: 10px;
 }
 
+.box-de-texto{
+    margin-top: 20px;
+}
+
+.box-de-texto span{
+    font-size: 20px;
+}
+
+.box-de-texto input{
+    width: 600px;
+    height: 50px;
+}
+
 /* FIM DAS CONFIGURAÇÕES DE LISTAGEM DE ADIÇÃO OU RETIRADA DE PRODUTOS */
 
 
