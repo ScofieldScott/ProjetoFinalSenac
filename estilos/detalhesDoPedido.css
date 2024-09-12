@@ -129,6 +129,22 @@ header h1 a:visited{
 }
 /* FIM DAS CONFIGURAÇÕES DO SUB HEADER */
 
+/* INICIO DAS CONFIGURAÇÕES DA IMAGEM */
+
+.apresentacao-da-comida{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao-da-comida img{
+    height: 30%;
+    width: auto;
+    border-radius: 10px;
+}
+
+/* FIM DAS CONFIGURAÇÕES DA IMAGEM */
 
 /* INICIO DAS CONFIGURAÇÕES DE APRESENTAÇÃO DA COMIDA */
 
@@ -139,27 +155,12 @@ header h1 a:visited{
     gap: 20px;
 }
 
-.box-apresentacao-do-prato img{
-    height: 50%;
-    width: auto;
-    border-radius: 10px;
-}
-
 .detalhes-do-prato h3{
+    display: flex;
+    justify-content: center;
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
-    /* margin-bottom: 20px; */
-}
-
-.preco {
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.valorcalorico{
-    margin-top: 10px;
-    margin-left: 10px;
     margin-bottom: 20px;
 }
 
@@ -167,117 +168,136 @@ header h1 a:visited{
     font-size: 20px;
 }
 
-.adicionar-carrinho{
+.preco {
+    margin-top: 10px;
     display: flex;
-
-    margin-top: 20%;
     justify-content: end;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.adicionar-carrinho button{
-    background-color: #F2C18D;
-    border: none;
-    
-    text-transform: uppercase;
-    border-radius: 10px;
-    justify-content: stretch;
-    height: 55px;
-    width: 400px;
-}
-
-.adicionar-carrinho button:hover{
-    padding: 4px;
-    color: #fff;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    box-shadow: -0.1px 0.5px 0.5px 2.5px #00000034;
-    cursor: pointer;
-}
-
 
 /* FIM DAS CONFIGURAÇÕES DE APRESENTAÇÃO DA COMIDA */
 
 
-/* INICIO DAS CONFIGURAÇÕES DAS INFORMAÇÕES DE ALÉRGENO */
+/* INICIO DE LISTAGEM DE ADIÇÃO OU RETIRADA DE PRODUTOS */
 
-.box-de-informacao-dos-alergenos{
+.box-de-selecao-de-produtos{
     border-top: 1px solid #000;
     margin: 50px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     justify-content: start;
-    row-gap: 50px;
+    column-gap: 50px;
+    row-gap: 20px;
 }
 
-.box-de-informacao-dos-alergenos h3{
+.box-de-adicionar{
     margin-top: 10px;
     font-size: 30px;
 
-    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-column: 1/2;
     grid-row: 1/2;
 
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.box-de-remover{
+    margin-top: 10px;
+    font-size: 30px;
 
-.box-de-informacao-dos-alergenos div{
-    margin-left: 20%;
-    margin-right: 20%;
-    grid-column: 1/-1;
-    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.box-de-informacao-dos-alergenos ul{
+.titulo-adicionar{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.adicionar ul{
     display: grid;
     list-style: none;
-    font-size: 28px;
+    padding-left: 20px;
+    font-size: 22px;
+    margin-top: 10px;
+
     border: 1px solid #000;
     align-items: center;
-    justify-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(3,1fr);
+    justify-items: start;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,1fr);
     line-height: 2.5;
 }
 
-/* FIM DAS CONFIGURAÇÕES DAS INFORMAÇÕES DE ALÉRGENO */
+label input, label span{
+    cursor: pointer;
+}
+
+label input:checked+span{
+    text-decoration: underline;
+}
+
+.remover ul{
+    display: grid;
+    list-style: none;
+    padding-left: 20px;
+    font-size: 22px;
+    margin-top: 10px;
+
+    border: 1px solid #000;
+    align-items: center;
+    justify-items: start;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto,1fr);
+    line-height: 2.5;
+}
+
+.titulo-remover{
+    font-size: 30px;
+    margin: 10px;
+}
+
+/* FIM DAS CONFIGURAÇÕES DE LISTAGEM DE ADIÇÃO OU RETIRADA DE PRODUTOS */
+
 
 
 /* INICIO DAS CONFIGURAÇÕES DO BOTAO PARA O CARDAPIO */
 
-
-.box-do-cardapio{
-    /* margin-top: 700px; */
+.carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: end;
     margin: 50px;
+}
+
+.box-de-mandar-para-carrinho{
+    /* margin-top: 700px; */
     display: grid;
+    grid-template-columns: repeat(2,1fr);
 
-    grid-template-columns: repeat(3,300px);
-    grid-template-rows: repeat(2,1fr);
-    gap: 10px;
-    align-content: center;
-    justify-content: center;
-
-    align-items: center;
-    justify-items: center;
-}
-
-.box-do-cardapio h3{
-    grid-column: 1/3;
-    font-size: 22px;
-    /* background-color: #000; */
     
-    align-self: start;
-    justify-self: start;
+    column-gap: 10px;
 }
 
-.box-do-cardapio div{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    align-items: center;
-    justify-items: stretch;
+.box-cancelar button{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
 }
 
-.box-do-cardapio button{
+.box-continuar button{
     background-color: #F2C18D;
     border: none;
     border-radius: 10px;
@@ -285,10 +305,21 @@ header h1 a:visited{
     width: 200px;
 }
 
-.box-do-cardapio button:hover{
+.box-cancelar button:hover{
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    box-shadow: -0.1px 0.5px 0.5px 2.5px #00000034;
+    cursor: pointer;
+}
+
+.box-continuar button:hover{
     padding: 4px;
     border-radius: 10px;
     border: 1px solid #000;
+    color: #fff;
     box-shadow: -0.1px 0.5px 0.5px 2.5px #00000034;
     cursor: pointer;
 }
