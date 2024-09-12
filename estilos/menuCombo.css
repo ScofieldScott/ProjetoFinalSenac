@@ -184,12 +184,20 @@ header h1 a:visited{
     cursor: pointer;
 }
 
+.related-post{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    text-align: justify;
+}
+
 span{
-    color: #000000b9;
+    color: #000;
+    font-size: 20px;
 }
 
 span:hover{
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: underline;
     color: #000;
 }
@@ -198,9 +206,23 @@ span:hover{
     text-decoration: none;
 }
 
+.related-post p{
+    /* width: 100px; */
+    padding-top: 10px;
+    color: #000;
+}
+
+.related-post p:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+
+
 
 
 /* FIM DAS CONFIGURAÇÕES DE CARDAPIO */
+
 
 /* INICIO DAS CONFIGURAÇÕE DO CARROSSEL */
 
@@ -217,15 +239,14 @@ span:hover{
 
     align-items: center;
     justify-items: center;
-    column-gap: 50px;
 }
 
 .box-do-conjuto-de-carrosseis h2{
-    font-size: 28px;
+    font-size: 24px;
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+    font-weight: 500;
+    font-style: normal;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,8 +254,8 @@ span:hover{
 
 /* inicio do Carrossel dos combos */
 .slider-dos-combos {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border: 2px solid #000;
     border-radius: 10px;
@@ -269,8 +290,8 @@ span:hover{
 
 /* inicio do Carrossel de mais pedidos */
 .slider-dos-mais-pedidos {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border: 2px solid #000;
     border-radius: 10px;
@@ -301,8 +322,8 @@ span:hover{
 
 /* inicio do Carrossel de pratos */
 .slider-dos-pratos {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border: 2px solid #000;
     border-radius: 10px;
@@ -332,8 +353,8 @@ span:hover{
 
 /* inicio do Carrossel de acompanhamentos */
 .slider-dos-acompanhamento {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border: 2px solid #000;
     border-radius: 10px;
