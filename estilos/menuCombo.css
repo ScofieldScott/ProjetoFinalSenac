@@ -152,6 +152,12 @@ header h1 a:visited{
     margin-bottom: 50px;
 }
 
+.box-de-comidas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .box-do-conjuto-comidas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -160,7 +166,6 @@ header h1 a:visited{
     align-items: center;
     justify-items: center;
 
-    margin-left: 22%;
     width: 800px;
     column-gap: 50px;
     row-gap: 100px;
