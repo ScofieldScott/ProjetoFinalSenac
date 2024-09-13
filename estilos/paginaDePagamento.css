@@ -11,6 +11,7 @@ body{
 .container{
     /* width: 1200px; */
     margin: 0 auto;
+    height: 800px;
 }
 
 /* INICIO DAS CONFIGURAÇÕES DO HEADER PRINCIPAL */
@@ -69,14 +70,6 @@ header h1 a:visited{
     cursor: pointer;
 }
 
-.cabecalho-principal option{
-    border-radius: 20px;
-    border: none;
-    background-color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-}
-
 .cabecalho-principal a:hover{
     padding: 4px;
     border-radius: 10px;
@@ -88,80 +81,75 @@ header h1 a:visited{
 
 /* FIM DAS CONFIGURAÇÕES DO HEADER PRINCIPAL */
 
-/* INICIO DAS CONFIGURAÇÕES DO SUB HEADER */
-.sub-header{
-    display: flex;
+.cadastro{
+    margin: 50px;
+    height: 800px;
+
+}
+
+.cadastro-da-localizacao{
+    margin: 50px;
+    padding: 10px;
+    height: auto;
+
+    border-bottom: 2px dotted #000;
+    border-radius: 5px;
+
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #C5EBAA;
-    height: 50px;
-
-    border-radius: 0 0 50px 50px;
+    justify-content: center; */
 }
 
-.cabecalho-secundario{
-    display: flex;
-    gap: 23px;
-}
 
-.cabecalho-secundario a{
-    font-size: 20px;
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.cabecalho-secundario a:link{
-    color: #000;
-    text-decoration: none;
-}
-
-.cabecalho-secundario a:hover{
-    font-size: 22px;
-    color: #fff;
+.cadastro-da-localizacao h3{
+    margin-left: 40px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
 }
 
-.cabecalho-secundario a:visited{
-    color: #000;
-    text-decoration: none;
-}
-/* FIM DAS CONFIGURAÇÕES DO SUB HEADER */
-
-.row{
-    margin: 10px;
-    height: 600px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
-
-.aviso{
+.cadastro-de-endereco{
+    height: auto;
     width: 80%;
-    height: 30%;
-
-    border: 2px solid #000;
-    border-radius: 5px;
-    box-shadow: -2.5px 1.5px 1.5px 1.5px #00000034;
-
-    display: flex;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
 }
 
-.aviso span{
-    font-size: 40px;
+#cidade,
+#bairro,
+#endereco,
+#numero,
+#cep,
+#informacoes{
+    border: none;
+    border-bottom: 1px solid #000;
 }
 
-.aviso img{
-    margin-left: 5%;
-    transform: scale(5.5);
+.cidade,
+.bairro,
+.endereco,
+.numero,
+.cep,
+.informacoes{
+    /* display: flex; */
+    
+    /* justify-content: flex-start; */
+    width: auto;
+    height: 60px;
+    font-weight: bold;
+    padding-right: 10px;
 }
+
 
 .carrinho-cheio{
+    margin: 50px;
     width: 70%;
-    height: 20%;
+    height: 200px;
 
     border: 2px solid #000;
     border-radius: 5px;
@@ -248,7 +236,6 @@ button span{
 
 .btn-finalizar-pedido:hover{
     color: #fff;
-    cursor: pointer;
 }
 
 /* INICIO DAS CONFIGURAÇÕES DO FOOTER */
