@@ -22,7 +22,9 @@ function moveCarousel(iDcarousel, currentIndex) {
 
 // Altera as imagens automaticamente a cada 3 segundos
 
+/*
 setInterval(function(){
+
     moveCarousel('carouselCombo',currentIndexCombos)
     currentIndexCombos++
     if (currentIndexCombos >= 4) {
@@ -50,3 +52,4 @@ setInterval(function(){
         currentIndexAcompanhamento = 0; // Volta ao início
     }
     }, 5000);
+*/
