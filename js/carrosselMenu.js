@@ -7,7 +7,7 @@ currentIndexAcompanhamento = 0;
 function moveCarousel(iDcarousel, currentIndex) {
     console.log(iDcarousel);
      
-     const totalSlides = 4;
+     const totalSlides = 3;
      const carousel = document.getElementById(iDcarousel);
      
 
@@ -22,7 +22,6 @@ function moveCarousel(iDcarousel, currentIndex) {
 
 // Altera as imagens automaticamente a cada 3 segundos
 
-/*
 setInterval(function(){
 
     moveCarousel('carouselCombo',currentIndexCombos)
@@ -45,11 +44,3 @@ setInterval(function(){
         currentIndexPratos = 0; // Volta ao início
     }
     }, 4000);
-setInterval(function(){
-        moveCarousel('carouselAcompanhamento',currentIndexAcompanhamento)
-        currentIndexAcompanhamento++
-    if (currentIndexAcompanhamento >= 4) {
-        currentIndexAcompanhamento = 0; // Volta ao início
-    }
-    }, 5000);
-*/
