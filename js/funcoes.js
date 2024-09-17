@@ -142,5 +142,108 @@ function recuperaCarrinho() {
 
         });
 
+//listar marmitas mais Pedidos gustavo
+function listarMarmitasMaisPedidos(){
+    fetch('http://localhost:8080/MarmitasMaisPedidos').
+    then(response=>response.json()).
+    then(function(dados){
+        let todosOsMarmitasMaisPedidos = document.getElementById("marmitasMaisPedidos")
+        todosOsMarmitasMaisPedidos.innerHTML=""
+        dados.forEach(function(dad){
+            let conteudo =`href=menuMarmitasMaisPedidos.html".html?idMarmitasMaisPedidos=${dad.id}">
+            <span>${dad.nome}</span>
+            </br>
+            <span>${dad.descricao}</span>
+            </a>`
+
+        todosOsMarmitasMaisPedidos.innerHTML = todosOsMarmitasMaisPedidos.innerHTML + conteudo;
+        });
+    });
+}
+
+function recuperarMarmitasMaisPedidos(id){
+    fetch('http://localhost:8080/MarmitasMaisPedidos/').then(response =>response.json()).
+    then(function (dados){
+        let MarmitasMaisPedidos = document.getElementById("dadosMarmitasMaisPedidos")
+        MarmitasMaisPedidos.innerHTML = ""
+
+        let conteudo = `<img src="${dados.img64}" alt="">
+
+            <div class="detalhes-do-prato">
+                <h3>
+                    <strong>${dados.nome}</strong>
+                </h3>
+
+                <p>
+                    ${dados.descricao}
+                </p>
+
+                <strong class="preco">${dados.preco}</strong>
+                
+                <div class="adicionar-carrinho">
+                    <a href="detalhesDoPedidoPratos.html">
+                        <button>Adicionar</button>
+                    </a>
+                </div>
+            </div>`
+
+        MarmitasMaisPedidos.innerHTML = MarmitasMaisPedidos.innerHTML + conteudo;
+    })
+}
+
+//listar marmitas
+function listarMarmitas(){
+    fetch('http://localhost:8080/Marmitas').
+    then(response=>response.json()).
+    then(function(dados){
+        let todosOsMarmitas = document.getElementById("marmitas")
+        todosOsMarmitas.innerHTML=""
+        dados.forEach(function(dad){
+            let conteudo =`href=menuMarmitas.html".html?idMarmitas=${dad.id}">
+            <span>${dad.nome}</span>
+            </br>
+            <span>${dad.descricao}</span>
+            </a>`
+
+        todosOsMarmitas.innerHTML = todosOsMarmitas.innerHTML + conteudo;
+        });
+    });
+}
+
+function recuperarMarmitas(id){
+    fetch('http://localhost:8080/Marmitas/').then(response =>response.json()).
+    then(function (dados){
+        let Marmitas = document.getElementById("dadosMarmitas")
+        Marmitas.innerHTML = ""
+
+        let conteudo = `<img src="${dados.img64}" alt="">
+
+            <div class="detalhes-do-prato">
+                <h3>
+                    <strong>${dados.nome}</strong>
+                </h3>
+
+                <p>
+                    ${dados.descricao}
+                </p>
+
+                <strong class="preco">${dados.preco}</strong>
+                
+                <div class="adicionar-carrinho">
+                    <a href="detalhesDoPedidoPratos.html">
+                        <button>Adicionar</button>
+                    </a>
+                </div>
+            </div>`
+
+        Marmitas.innerHTML = Marmitas.innerHTML + conteudo;
+    })
+}
+
+
+
+
+    
+
 
 }
