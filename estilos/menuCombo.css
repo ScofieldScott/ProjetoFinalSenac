@@ -161,7 +161,6 @@ header h1 a:visited{
 .box-do-conjuto-comidas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
 
     align-items: center;
     justify-items: center;
@@ -176,17 +175,26 @@ header h1 a:visited{
 
 .box-de-comida--1{
     height: 200px;
-    width: 200px;
-    border: 2px solid #000;
-    border-radius: 15%;
-}
-
-.box-de-comida--1:hover{
-    padding: 4px;
+    
     border-radius: 10px;
     border: 2px solid #fff;
+}
+
+
+/* pode ser retirado de acordo com o banco */
+.related-box{
+    width: 600px;
+}
+
+.related-box:hover{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #fff;
     box-shadow: -1.5px 0.5px 15px 1.5px #0000005b;
+    text-decoration: underline;
     cursor: pointer;
+
+    background-color: #f6f193b9;
 }
 
 .related-post{
@@ -201,12 +209,6 @@ span{
     font-size: 20px;
 }
 
-span:hover{
-    font-size: 22px;
-    text-decoration: underline;
-    color: #000;
-}
-
 .box-do-conjuto-comidas a:link{
     text-decoration: none;
 }
@@ -214,11 +216,6 @@ span:hover{
 .related-post p{
     /* width: 100px; */
     padding-top: 10px;
-    color: #000;
-}
-
-.related-post p:hover{
-    text-decoration: underline;
     color: #000;
 }
 

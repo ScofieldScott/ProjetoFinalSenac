@@ -31,9 +31,10 @@
             <form action="cadastro">
 
                 <fieldset class="cadastro-da-localizacao">
-                    <h3>Endereço</h3>
-
+                    
                     <div class="cadastro-de-endereco">
+                        <h3>Endereço</h3>
+
                         <div class="cidade">
                             <label for="cidade" class="cidade" role="label">Cidade</label>
                             <input type="text" id="cidade" placeholder="Cidade" name="cidade" />
@@ -62,66 +63,48 @@
                         <div class="informacoes">
                             <label for="informacoes" class="informacoes">Informacoes adicionais</label>
                             <input type="text" id="informacoes" name="informacoes" />
+                        </div>
+                    </div>
+
+                    
+                    <div class="cadastro-de-dados-pessoais">
+                        <h3>Dados Pessoais</h3>
+
+                        <div class="nome">
+                            <label for="nome" class="nome" role="label">Nome Completo</label>
+                            <input type="text" id="nome" placeholder="Nome Completo" name="nome" />
+                        </div>
+                        
+                        <div class="celular">
+                            <label for="celular" class="celular">Celular</label>
+                            <input type="number" maxlength="11" id="celular" placeholder="celular" name="celular" />
+                        </div>
+                        
+                        <div class="email">
+                            <label for="email" class="email">Email</label>
+                            <input type="text" id="email" placeholder="endereço" name="email" />
                         </div>
                     </div>
                         
                 </fieldset>
 
                 <!-- FIM DO CADASTRO DAS INFORMAÇÕES LOCALIZAÇÃO -->
-
-                <!-- INICIO DO CADASTRO DAS INFORMAÇÕES -->
-                <fieldset class="cadastro">
-
-                    <h3>Dados Pessoais</h3>
-
-                    <div class="cadastro-de-endereco">
-                        <div class="cidade">
-                            <label for="cidade" class="cidade" role="label">Cidade</label>
-                            <input type="text" id="cidade" placeholder="Cidade" name="cidade" />
-                        </div>
-                        
-                        <div class="bairro">
-                            <label for="bairro" class="bairro">Bairro</label>
-                            <input type="text" id="bairro" placeholder="bairro" name="bairro" />
-                        </div>
-                        
-                        <div class="endereco">
-                            <label for="endereco" class="endereco">Endereço</label>
-                            <input type="text" id="endereco" placeholder="endereço" name="endereco" />
-                        </div>
-                        
-                        <div class="numero">
-                            <label for="numero" class="numero">Numero</label>
-                            <input type="number" id="numero" placeholder="numero" name="numero" maxlength="3" />
-                        </div>
-
-                        <div class="cep">
-                            <label for="cep" class="cep">CEP</label>
-                            <input type="number" id="cep" name="cep" placeholder="cep" maxlength="8" />
-                        </div>
-                        
-                        <div class="informacoes">
-                            <label for="informacoes" class="informacoes">Informacoes adicionais</label>
-                            <input type="text" id="informacoes" name="informacoes" />
-                        </div>
-                    </div>
-                </fieldset>
-                <!-- FIM DO CADASTRO DAS INFORMAÇÕES -->
                 
 
                 <fieldset class="cadastro">
 
-                    <h3>Forma de Pagamento</h3>
-
-                    <div class="cadastro-de-endereco">
-                        <div class="cidade">
-                            <label for="cidade" class="cidade" role="label">PIX</label>
-                            <input type="text" id="cidade" placeholder="Cidade" name="cidade" />
+                    
+                    <h3 class="titulo-do-cadastro">Forma de Pagamento</h3>
+                    
+                    <div class="cadastro-de-pagamento">
+                        <div class="pix">
+                            <label for="pix" class="pix" role="label">PIX</label>
+                            <input type="radio" id="pix" name="pix" />
                         </div>
                         
-                        <div class="bairro">
-                            <label for="bairro" class="bairro">Dinheiro</label>
-                            <input type="text" id="bairro" placeholder="bairro" name="bairro" />
+                        <div class="dinheiro">
+                            <label for="dinheiro" class="dinheiro">Dinheiro</label>
+                            <input type="radio" id="dinheiro" name="dinheiro" />
                         </div>
                     </div>
                 </fieldset>
@@ -175,7 +158,5 @@
             </footer>
             <!-- FIM DO FOOTER -->
         </div>
-
-        <script src="js/carrosselIndex.js"></script>
     </body>
 </html>

@@ -168,17 +168,20 @@ header h1 a:visited{
 
 .box-de-comida--1{
     height: 200px;
-    width: 200px;
-    border: 2px solid #000;
-    border-radius: 15%;
+    
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
-.box-de-comida--1:hover{
-    padding: 4px;
-    border-radius: 10px;
+.related-box:hover{
+    padding: 10px;
+    border-radius: 5px;
     border: 2px solid #fff;
     box-shadow: -1.5px 0.5px 15px 1.5px #0000005b;
+    text-decoration: underline;
     cursor: pointer;
+
+    background-color: #f6f193b9;
 }
 
 .related-post{
@@ -193,30 +196,13 @@ span{
     font-size: 20px;
 }
 
-span:hover{
-    font-size: 22px;
-    text-decoration: underline;
-    color: #000;
-}
-
-.box-do-conjuto-comidas a:link{
+.related-box a:link{
     text-decoration: none;
 }
 
-.proteina-carne p,
-.proteina-frango p,
-.proteina-peixe p,
-.vegetariano p{
+.descricao p{
     /* width: 100px; */
     padding-top: 10px;
-    color: #000;
-}
-
-.proteina-carne p:hover,
-.proteina-frango p:hover,
-.proteina-peixe p:hover,
-.vegetariano p:hover{
-    text-decoration: underline;
     color: #000;
 }
 
@@ -235,10 +221,10 @@ span:hover{
 
 .box-do-conjuto-de-carrosseis{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     align-items: center;
-    justify-items: center;
+    justify-items: start;
 }
 
 .box-do-conjuto-de-carrosseis h2{
@@ -316,42 +302,10 @@ span:hover{
 }
 /* fim do Carrossel de mais pedidos */
 
-/* inicio do Carrossel de acompanhamentos */
-.slider-dos-acompanhamento {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border: 2px solid #000;
-    border-radius: 10px;
-    position: relative;
-}
-
-.slides-dos-acompanhamento {
-    display: flex;
-    flex-direction: column; /* Alinha as imagens verticalmente */
-    height: 100%;
-}
-
-.slide-dos-acompanhamento {
-    flex: 0 0 100%; /* Cada slide ocupará 100% da altura da área visível */
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide-dos-acompanhamento img {
-    height: 100%; /* Ajusta a imagem para ocupar a altura completa do container */
-    width: 100%;
-    border-radius: 10px;
-}
-/* fim do Carrossel de acompanhamentos */
-
 
 .slider-dos-combos:hover,
 .slider-dos-mais-pedidos:hover,
-.slider-dos-pratos:hover,
-.slider-dos-acompanhamento:hover{
+.slider-dos-pratos:hover{
     padding: 4px;
     border-radius: 10px;
     border: 5px solid #fff;

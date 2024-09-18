@@ -83,7 +83,7 @@ header h1 a:visited{
 
 .cadastro{
     margin: 50px;
-    height: 800px;
+    height: auto;
 
 }
 
@@ -91,6 +91,12 @@ header h1 a:visited{
     margin: 50px;
     padding: 10px;
     height: auto;
+
+    
+    display: grid;
+    align-items: start;
+    justify-content: start;
+    grid-template-columns: repeat(2, 1fr);
 
     border-bottom: 2px dotted #000;
     border-radius: 5px;
@@ -101,23 +107,38 @@ header h1 a:visited{
 }
 
 
-.cadastro-da-localizacao h3{
-    margin-left: 40px;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: underline;
-}
 
 .cadastro-de-endereco{
-    height: auto;
+    /* height: auto; */
     width: 80%;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 20px;
     display: grid;
     align-items: center;
-    justify-content: start;
-    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+}
+
+.cadastro-de-dados-pessoais{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.cadastro-de-endereco h3,
+.cadastro-de-dados-pessoais h3{
+    margin-left: 40px;
+    margin-bottom: 10px;
+    grid-column: 1/3;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
 }
 
 #cidade,
@@ -145,56 +166,43 @@ header h1 a:visited{
     padding-right: 10px;
 }
 
+#nome,
+#celular,
+#email{
+    border: none;
+    border-bottom: 1px solid #000;
+}
 
-.carrinho-cheio{
-    margin: 50px;
-    width: 70%;
-    height: 200px;
+.nome,
+.celular,
+.email{
+    /* display: flex; */
+    
+    /* justify-content: flex-start; */
+    width: auto;
+    height: 60px;
+    font-weight: bold;
+    padding-right: 10px;
+}
 
-    border: 2px solid #000;
-    border-radius: 5px;
-    box-shadow: -2.5px 1.5px 1.5px 1.5px #00000034;
-
+.cadastro-de-pagamento{
+    margin: 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: 10px;
 }
 
-.carrinho-cheio img{
-    height: 100px;
-    border-radius: 5px;
-    margin: 5px;
+.titulo-do-cadastro{
+    margin: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
 }
 
-.valor-produto{
-    margin: 5px;
-    display: grid;
-    padding-left: 5px;
-    border-left: 1px solid #000;
-    grid-template-columns: repeat(3,40px);
-    column-gap: 5px;
-    justify-content: space-around;
-}
-
-.quantidade{
-    font-size: 40px;
-    width: 40px;
-    border: 2px solid #000;
-    border-radius: 5px;
-}
-
-button span{
-    font-size: 30px;
-}
-
-.lixeira{
-    width: 20px;
-}
-
-.preco{
-    font-size: 40px;
-    height: 50px;
-    justify-content: end;
+.pix,
+.dinheiro{
+    font-weight: bold;
+    padding-right: 10px;
 }
 
 .finalizacao-da-compra{

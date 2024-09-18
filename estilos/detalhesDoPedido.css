@@ -54,29 +54,6 @@ header h1 a:visited{
     padding-right: 40px;
 }
 
-.cabecalho-principal select{
-    border: none;
-    border-radius: 20px;
-    background-color: #C5EBAA;
-    font-size: 28px;
-}
-
-.cabecalho-principal select:hover{
-    padding: 4px;
-    border-radius: 10px;
-    border: 2px solid #fff;
-    box-shadow: -2.5px -1.5px 1.5px 1.5px #00000034;
-    cursor: pointer;
-}
-
-.cabecalho-principal option{
-    border-radius: 20px;
-    border: none;
-    background-color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-}
-
 .cabecalho-principal a:hover{
     padding: 4px;
     border-radius: 10px;
@@ -184,11 +161,6 @@ header h1 a:visited{
 .box-de-selecao-de-produtos{
     border-top: 1px solid #000;
     margin: 50px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: start;
-    column-gap: 50px;
-    row-gap: 20px;
 }
 
 .box-de-adicionar{
