@@ -89,29 +89,11 @@
         <div class="adicionar">
           <div id="listaDeAdicionais">
             <span class="titulo-adicionar">Adicionais</span>
-            <ul class="adicionar">
+            <ul class="adicionar" id="adicionar">
               <li>
                 <label class="wrapper" for="">
                   <input type="checkbox" name="arroz" />
                   <span>Batata frita</span>
-                </label>
-              </li>
-              <li>
-                <label class="wrapper" for="">
-                  <input type="checkbox" name="arroz" />
-                  <span>Salada</span>
-                </label>
-              </li>
-              <li>
-                <label class="wrapper" for="">
-                  <input type="checkbox" name="arroz" />
-                  <span>Porção de arroz</span>
-                </label>
-              </li>
-              <li>
-                <label class="wrapper" for="">
-                  <input type="checkbox" name="arroz" />
-                  <span>Farofa</span>
                 </label>
               </li>
             </ul>
@@ -119,61 +101,10 @@
             <div class="box-de-texto">
               <span>Informações adicionais:</span>
               <input type="text" name="" id="" />
-            </div>
-          </div>
-        </div>
-
-        <h3 class="box-de-remover">Remover Porção</h3>
-
-        <div class="remover">
-          <div id="listaDeRemocao">
-            <span class="titulo-remover">Porções</span>
-            <ul class="remover">
-              <li>
-                <label class="wrapper" for="">
-                  <input type="checkbox" name="arroz" />
-                  <span>Arroz</span>
-                </label>
-              </li>
-
-              <li>
-                <label class="wrapper" for="">
-                  <input type="checkbox" name="arroz" />
-                  <span>Feijão</span>
-                </label>
-              </li>
-
-              <li>
-                <label class="wrapper" for="">
-                  <input type="checkbox" name="arroz" />
-                  <span>Farofa</span>
-                </label>
-              </li>
-
-              <li>
-                <label class="wrapper" for="">
-                  <input type="checkbox" name="arroz" />
-                  <span>Carne</span>
-                </label>
-              </li>
-
-              <li>
-                <label class="wrapper" for="">
-                  <input type="checkbox" name="arroz" />
-                  <span>Alface</span>
-                </label>
-              </li>
-
-              <li>
-                <label class="wrapper" for="">
-                  <input type="checkbox" name="arroz" />
-                  <span>Tomate</span>
-                </label>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
+    </div>
 
       <!-- FIM DA LISTAGEM DE ADIÇÃO OU RETIRADA DE PRODUTOS -->
 
@@ -255,5 +186,10 @@
       </footer>
       <!-- FIM DO FOOTER -->
     </div>
+
+    <script src="js/funcoes.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', listarMarmitasDoCombo)
+    </script>
   </body>
 </html>

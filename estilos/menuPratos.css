@@ -164,25 +164,7 @@ header h1 a:visited{
     border-bottom: 3px solid #000;
 }
 
-.box-do-conjuto-comidas h2{
-    font-size: 28px;
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.proteina-carne,
-.proteina-frango,
-.proteina-peixe,
-.vegetariano{
-    display: grid;
-    /* grid-template-rows: repeat(3,1fr); */
-    row-gap: 30px;
-}
 
 .box-de-comida--1{
     height: 200px;

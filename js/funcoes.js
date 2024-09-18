@@ -44,7 +44,7 @@ function recuperarCombo(id) {
                 <strong class="preco">${"R$ " + dados.preco}</strong>
                 
                 <div class="adicionar-carrinho">
-                    <a href="detalhesDoPedidoPratos.html">
+                    <a href="detalhesDoPedido.html">
                         <button>Adicionar</button>
                     </a>
                 </div>
@@ -61,23 +61,50 @@ function listarMarmitas() {
             let todasAsMarmitas = document.getElementById("marmitas")
             todasAsMarmitas.innerHTML = ""
             dados.forEach(function (dado) {
-                let conteudo = `<a class="related-post" href="menuPratos.html?idMarmita=${dado.id}">
-                                <img class="box-de-comida--1" src="${dado.img64}" alt="">
+                    let conteudo = `<a class="related-post" href="MarmitaDeComida.html?idMarmita=${dado.id}">
+                                <img class="box-de-comida--1" src="${dado.proteina.img64}" alt="">
 
-                                <div>
+                                <div class="descricao">
                                     <span>${dado.nome}</span>
                                     <p>
                                         ${dado.acompanhamentos}
                                     </p>
                                 </div>
                             </a>`
-
-
+                            
                 todasAsMarmitas.innerHTML = todasAsMarmitas.innerHTML + conteudo;
             })
         }
         );
 }
+
+function recuperarMarmita(id) {
+
+    let url = new URL(window.location.href);
+    //recuperando o id da pessoa que esta no parametro de nome idMarmita
+    let idMarmita = url.searchParams.get('idMarmita');
+
+    fetch('http://localhost:8080/marmita/' + idMarmita).then(response => response.json()).
+        then(function (dados) {
+            let marmita = document.getElementById("box-apresentacao-do-prato")
+            marmita.innerHTML = ""
+
+            let conteudo = `<img src="${dados.proteina.img64}" alt="">
+
+            <div class="detalhes-do-prato">
+                <h3>
+                    <strong>${dados.nome}</strong>
+                </h3>
+
+                <p>
+                    ${dados.acompanhamentos}
+                </p>
+            </div>`
+
+            marmita.innerHTML = marmita.innerHTML + conteudo;
+        })
+}
+
 //Continuação PAULO
 
 function listarCarrinho(id) {
@@ -239,11 +266,25 @@ function recuperarMarmitas(id){
         Marmitas.innerHTML = Marmitas.innerHTML + conteudo;
     })
 }
+}
 
-
-
-
-    
-
-
+function listarMarmitasDoCombo() {
+    fetch('http://localhost:8080/marmita').
+        then(response => response.json()).
+        then(function (dados) {
+            let todasAsMarmitas = document.getElementById("adicionar")
+            todasAsMarmitas.innerHTML = ""
+            dados.forEach(function (dado) {
+                    let conteudo = `
+                    <li>
+                <label class="wrapper" for="">
+                  <input type="checkbox" name="${dado.nome}" />
+                  <span>${dado.nome}</span>
+                </label>
+              </li>`
+                            
+                todasAsMarmitas.innerHTML = todasAsMarmitas.innerHTML + conteudo;
+            })
+        }
+        );
 }
