@@ -24,15 +24,7 @@
           </div>
 
           <nav class="cabecalho-principal">
-            <a href="carrinho.html">
-              <img src="imagens/carrinho.png" alt="" width="25" height="25"/>
-            </a>
-          </nav>
-        </header>
-
-        <header class="sub-header">
-          <nav class="cabecalho-secundario">
-            <a href="menu.html">
+            <a href="menu.html"></a>
               <span>Menu</span>
             </a>
             <a href="menuMarmitas.html">
@@ -46,30 +38,23 @@
             </a>
           </nav>
         </header>
+
       </div>
       <!-- FIM DO HEADER -->
 
       <!-- INICIO DA APRESENTAÇÃO DA COMIDA -->
-      <div class="apresentacao-da-comida" id="apresentacao-da-comida">
-        <img
-          src="https://img.freepik.com/free-photo/view-delicious-ready-eat-meal_23-2151187742.jpg?t=st=1726110897~exp=1726114497~hmac=354048411df6f6638ad7afb238b5fe597663ed0f9f42d4a2a8a88eb261e0a02e&w=740"
-          alt=""
-        />
-      </div>
-
-      <div class="box-apresentacao-do-prato" id="box-apresentacao-do-prato">
-        <div class="detalhes-do-prato" id="detalhes-do-prato">
-          <h3>
-            <strong>Combo de carne</strong>
-          </h3>
-
-          <p>
-            Dois hambúrgueres (100% carne bovina), alface americana, queijo
-            processado sabor cheddar, molho especial, cebola, picles e pão com
-            gergelim.
-          </p>
-
-          <strong class="preco">R$40,00</strong>
+      <div id="detalhes-do-combo">
+        <div class="apresentacao-da-comida" id="apresentacao-da-comida">
+          <img
+            src="https://img.freepik.com/free-photo/view-delicious-ready-eat-meal_23-2151187742.jpg?t=st=1726110897~exp=1726114497~hmac=354048411df6f6638ad7afb238b5fe597663ed0f9f42d4a2a8a88eb261e0a02e&w=740"
+            alt=""
+          />
+        </div>
+  
+        <div class="box-apresentacao-do-prato" id="box-apresentacao-do-prato">
+          <div class="detalhes-do-prato" id="detalhes-do-prato">
+            
+          </div>
         </div>
       </div>
       <!-- FIM DA APRESENTAÇÃO DA COMIDA -->
@@ -85,7 +70,7 @@
             <ul class="adicionar" id="adicionar">
               <li>
                 <label class="wrapper" for="">
-                  <input type="checkbox" name="arroz" />
+                  <input type="checkbox" maxlength="3" name="arroz" />
                   <span>Batata frita</span>
                 </label>
               </li>
@@ -112,8 +97,8 @@
           </div>
 
           <div class="box-continuar">
-            <a href="carrinho.html">
-              <button type="submit">Adicionar ao carrinho</button>
+            <a href="paginaDePagamento.html">
+              <button type="submit">Finalizar Pedido</button>
             </a>
           </div>
         </div>
@@ -184,5 +169,9 @@
     <script>
         document.addEventListener('DOMContentLoaded', listarMarmitasDoCombo)
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', dadosDoCombo)
+      document.addEventListener('DOMContentLoaded', limitCheckbox)
+  </script>
   </body>
 </html>

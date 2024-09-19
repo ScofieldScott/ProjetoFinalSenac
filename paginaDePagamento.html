@@ -50,19 +50,14 @@
                             <input type="text" id="endereco" placeholder="endereço" name="endereco" />
                         </div>
                         
-                        <div class="numero">
-                            <label for="numero" class="numero">Numero</label>
-                            <input type="number" id="numero" placeholder="numero" name="numero" maxlength="3" />
+                        <div class="complemento">
+                            <label for="complemento" class="complemento">Complemento</label>
+                            <input type="text" id="complemento" placeholder="complemento" name="complemento" maxlength="3" />
                         </div>
 
                         <div class="cep">
                             <label for="cep" class="cep">CEP</label>
                             <input type="number" id="cep" name="cep" placeholder="cep" maxlength="8" />
-                        </div>
-                        
-                        <div class="informacoes">
-                            <label for="informacoes" class="informacoes">Informacoes adicionais</label>
-                            <input type="text" id="informacoes" name="informacoes" />
                         </div>
                     </div>
 
@@ -84,6 +79,11 @@
                             <label for="email" class="email">Email</label>
                             <input type="text" id="email" placeholder="endereço" name="email" />
                         </div>
+                        
+                        <div class="cpf">
+                            <label for="cpf" class="celular">CPF</label>
+                            <input type="number" id="celular" placeholder="cpf" maxlength="11" name="cpf" />
+                        </div>
                     </div>
                         
                 </fieldset>
@@ -99,12 +99,12 @@
                     <div class="cadastro-de-pagamento">
                         <div class="pix">
                             <label for="pix" class="pix" role="label">PIX</label>
-                            <input type="radio" id="pix" name="pix" />
+                            <input type="radio" id="pix" name="pagamento" />
                         </div>
                         
                         <div class="dinheiro">
                             <label for="dinheiro" class="dinheiro">Dinheiro</label>
-                            <input type="radio" id="dinheiro" name="dinheiro" />
+                            <input type="radio" id="dinheiro" name="pagamento" />
                         </div>
                     </div>
                 </fieldset>
@@ -114,7 +114,7 @@
                 <h3>Finalizar pedido</h3>
 
                 <div>
-                    <span class="texto-span">pedido realizado com sucesso</span>
+                    <span class="texto-span">${dados.nome}</span>
                 </div>
                 <div class="valor-final">
                     <span>R$</span>
