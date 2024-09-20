@@ -249,9 +249,15 @@ function mostrarCombo(){
             <h3>Finalizar pedido</h3>
                 <div>
                     <span class="texto-span">Combo: ${dados.nome}</span>
+                    <ul>
+                        <li>
+                            ${dados.marmitas}
+                        </li>
+                    </ul>
+
                 </div>
                 <div class="valor-final">
-                    <span>${dados.preco}</span>
+                    <span>${"R$ " + dados.preco}</span>
                     <a href=""><button type="submit" class="btn-finalizar-pedido">Finalizar compra</button></a>
                 </div>`
             combo.innerHTML = combo.innerHTML + conteudo;
