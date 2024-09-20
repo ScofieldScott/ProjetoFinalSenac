@@ -20,6 +20,7 @@ body{
     justify-content: space-between;
     background-color: #C5EBAA;
     height: 100px;
+    border-radius: 0 0 30px 30px;
 }
 
 .logo{
@@ -54,57 +55,7 @@ header h1 a:visited{
     padding-right: 40px;
 }
 
-.cabecalho-principal select{
-    border: none;
-    border-radius: 20px;
-    background-color: #C5EBAA;
-    font-size: 28px;
-}
-
-.cabecalho-principal select:hover{
-    padding: 4px;
-    border-radius: 10px;
-    border: 2px solid #fff;
-    box-shadow: -2.5px -1.5px 1.5px 1.5px #00000034;
-    cursor: pointer;
-}
-
-.cabecalho-principal option{
-    border-radius: 20px;
-    border: none;
-    background-color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-}
-
-.cabecalho-principal a:hover{
-    padding: 4px;
-    border-radius: 10px;
-    border: 2px solid #fff;
-    box-shadow: -1.5px -0.5px 1.5px 1.5px #00000034;
-    cursor: pointer;
-}
-
-
-/* FIM DAS CONFIGURAÇÕES DO HEADER PRINCIPAL */
-
-/* INICIO DAS CONFIGURAÇÕES DO SUB HEADER */
-.sub-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #C5EBAA;
-    height: 50px;
-
-    border-radius: 0 0 50px 50px;
-}
-
-.cabecalho-secundario{
-    display: flex;
-    gap: 23px;
-}
-
-.cabecalho-secundario a{
+.cabecalho-principal a{
     font-size: 20px;
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
@@ -112,22 +63,24 @@ header h1 a:visited{
     font-style: normal;
 }
 
-.cabecalho-secundario a:link{
+.cabecalho-principal a:link{
     color: #000;
     text-decoration: none;
 }
 
-.cabecalho-secundario a:hover{
+.cabecalho-principal a:hover{
     font-size: 22px;
-    color: #fff;
+    color: #000;
     text-decoration: underline;
 }
 
-.cabecalho-secundario a:visited{
+.cabecalho-principal a:visited{
     color: #000;
     text-decoration: none;
 }
-/* FIM DAS CONFIGURAÇÕES DO SUB HEADER */
+
+
+/* FIM DAS CONFIGURAÇÕES DO HEADER PRINCIPAL */
 
 
 /* INICIO DAS OPÇOES DO CARDAPIO */
@@ -183,7 +136,7 @@ header h1 a:visited{
 
 /* pode ser retirado de acordo com o banco */
 .related-box{
-    width: 600px;
+    width: auto;
 }
 
 .related-box:hover{
@@ -207,6 +160,10 @@ header h1 a:visited{
 span{
     color: #000;
     font-size: 20px;
+}
+
+.box-do-conjuto-comidas a{
+    color: #000;
 }
 
 .box-do-conjuto-comidas a:link{
@@ -237,7 +194,7 @@ span{
 
 .box-do-conjuto-de-carrosseis{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     align-items: center;
     justify-items: center;

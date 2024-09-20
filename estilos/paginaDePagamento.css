@@ -21,6 +21,7 @@ body{
     justify-content: space-between;
     background-color: #C5EBAA;
     height: 100px;
+    border-radius: 0 0 30px 30px;
 }
 
 .logo{
@@ -55,27 +56,28 @@ header h1 a:visited{
     padding-right: 40px;
 }
 
-.cabecalho-principal select{
-    border: none;
-    border-radius: 20px;
-    background-color: #C5EBAA;
-    font-size: 28px;
+.cabecalho-principal a{
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
-.cabecalho-principal select:hover{
-    padding: 4px;
-    border-radius: 10px;
-    border: 2px solid #fff;
-    box-shadow: -2.5px -1.5px 1.5px 1.5px #00000034;
-    cursor: pointer;
+.cabecalho-principal a:link{
+    color: #000;
+    text-decoration: none;
 }
 
 .cabecalho-principal a:hover{
-    padding: 4px;
-    border-radius: 10px;
-    border: 2px solid #fff;
-    box-shadow: -1.5px -0.5px 1.5px 1.5px #00000034;
-    cursor: pointer;
+    font-size: 22px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.cabecalho-principal a:visited{
+    color: #000;
+    text-decoration: none;
 }
 
 
