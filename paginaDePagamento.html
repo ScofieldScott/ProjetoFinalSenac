@@ -110,14 +110,12 @@
                 </fieldset>
             </form>
 
-            <div class="finalizacao-da-compra">
+            <div class="finalizacao-da-compra" id="combo">
                 <h3>Finalizar pedido</h3>
-
                 <div>
-                    <span class="texto-span">${dados.nome}</span>
+                    
                 </div>
                 <div class="valor-final">
-                    <span>R$</span>
                     <span>numero</span>
                     <a href=""><button type="submit" class="btn-finalizar-pedido">Finalizar compra</button></a>
                 </div>
@@ -159,4 +157,9 @@
             <!-- FIM DO FOOTER -->
         </div>
     </body>
+    <script src="js/funcoes.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', listarMarmitasDoPedido)
+        
+        document.addEventListener('DOMContentLoaded', mostrarCombo)
+    </script>
 </html>

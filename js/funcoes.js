@@ -6,7 +6,7 @@ function listarCombos() {
             todosOsCombos.innerHTML = ""
             dados.forEach(function (dado) {
                 let conteudo = `<div class="related-box">
-                <a href="Combo.html?idCombo=${dado.id}">
+                <a href="detalhesDoPedido.html?idCombo=${dado.id}">
                                         <img class="box-de-comida--1" src="${dado.img64}" alt="">
                                         <div>
                                             <span>${dado.nome}</span>
@@ -145,12 +145,14 @@ function listarMarmitasDoCombo() {
             todasAsMarmitas.innerHTML = ""
             dados.forEach(function (dado) {
                     let conteudo = `
-                    <li>
+            <ul class="adicionar" id="adicionar">
+              <li>
                 <label class="wrapper" for="">
-                  <input type="checkbox" limit="4" name="marmitas" required/>
+                  <input type="checkbox" limit="4" name="marmitas" value="${dado.id}"/>
                   <span>${dado.nome}</span>
                 </label>
-              </li>`
+              </li>
+            </ul>`
                             
                 todasAsMarmitas.innerHTML = todasAsMarmitas.innerHTML + conteudo;
             })
@@ -206,3 +208,52 @@ function dadosDoCombo(){
         </div>`
         combo.innerHTML = combo.innerHTML + conteudo;
 })}
+
+function enviarCombo(){
+    let url = new URL(window.location.href);
+    let idCombo = url.searchParams.get('idCombo');
+
+    let form = document.getElementById('marmitasDoCombo')
+    let conteudo = `<input type="hidden" name="idCombo" value="${idCombo}">`
+    form.innerHTML += conteudo;
+}
+
+
+function listarMarmitasDoPedido(){
+    let url = new URL(window.location.href);
+    
+    let marmitas = url.searchParams.getAll('marmitas');
+    let idCombo = url.searchParams.get('idCombo');
+    
+    marmitas.forEach(marmita => {
+        fetch('http://localhost:8080/marmita/' + marmita).then(response => response.json()).then(function(dados){
+        
+        dados.forEach(function(dado){
+            
+    })
+})
+    });
+    }
+
+function mostrarCombo(){
+    let url = new URL(window.location.href);
+    
+    let idCombo = url.searchParams.get('idCombo');
+
+    fetch('http://localhost:8080/combos/' + idCombo).then(response => response.json()).
+        then(function (dados) {
+            let combo = document.getElementById("combo")
+            combo.innerHTML = ""
+            let conteudo = `
+
+            <h3>Finalizar pedido</h3>
+                <div>
+                    <span class="texto-span">Combo: ${dados.nome}</span>
+                </div>
+                <div class="valor-final">
+                    <span>${dados.preco}</span>
+                    <a href=""><button type="submit" class="btn-finalizar-pedido">Finalizar compra</button></a>
+                </div>`
+            combo.innerHTML = combo.innerHTML + conteudo;
+        })
+}
